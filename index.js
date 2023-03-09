@@ -1,33 +1,26 @@
-function shout(String) {
-    return String.toUpperCase(); //Hello
+function shout(string) {
+    return string.toUpperCase(); //Hello
 }
-function whisper(String) {
-    return String.toLowerCase(); //hello
+function whisper(string) {
+    return string.toLowerCase(); //hello
 }
-function logShout (String) {
-    console.log(shout(String));
+function logShout (string) {
+    console.log(shout(string));
 }
-function logWhisper (String) {
-    console.log(whisper(String));
+function logWhisper (string) {
+    console.log(whisper(string));
 }
-function sayHiToHeadphonedRoommate (String) {
-    
-    let greeting;
-
-    switch (String) {
-        case String.toLowerCase():
-            greeting = "I can't hear you";
-            break;
-        case String.toUpperCase():
-            greeting = "YES INDEED";
-            break;
-        case String === "Let's have dinner together!":
-            greeting = "I would love to";
-            break;
-        default:
-            greeting = "Normal";
-            break;
+function sayHiToHeadphonedRoommate (string) {
+    if (string === string.toLowerCase()) {
+        return "I can't hear you!";
     }
-    console.log(greeting);
-    greeting;
+    else if (string === string.toUpperCase()) {
+        return "YES INDEED!";
+    } else if ("Let's have dinner together") {
+      return "I would love to!"
+    }
 }
+
+
+    
+   
